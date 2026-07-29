@@ -1,0 +1,65 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  grid-column: 1 / -1;
+  background-color: grey;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.creator, .description, .ingredients, .instructions, .extra-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.creator h3, .description h3, .ingredients h3, .instructions h3, .extra-card h3 {
+  background-color: #667eea;
+  color: white;
+  padding: 10px;
+  margin: -20px -20px 15px -20px;
+  border-radius: 3px 3px 0 0;
+}
+
+.extra-card {
+  grid-column: 1 / -1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.extra-card a {
+  color: #667eea;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.extra-card img {
+  width: 220px;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.ingredients ul, .instructions ol {
+  margin-left: 20px;
+}
+
+.ingredients li, .instructions li {
+  margin-bottom: 8px;
+}
